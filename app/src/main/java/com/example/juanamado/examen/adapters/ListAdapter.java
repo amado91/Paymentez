@@ -2,6 +2,7 @@ package com.example.juanamado.examen.adapters;
 
 import android.content.Context;
 import android.os.Build;
+import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -42,6 +43,7 @@ public class ListAdapter extends BaseAdapter {
         return position;
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         View v = convertView;
@@ -59,6 +61,9 @@ public class ListAdapter extends BaseAdapter {
 
             TextView id = v.findViewById(R.id.idBusines);
             id.setText(dir.getId());
+
+            ImageView imageView = v.findViewById(R.id.imageView4);
+            imageView.setImageDrawable(context.getDrawable(R.drawable.ic_launcher_background));
 
 
         }
