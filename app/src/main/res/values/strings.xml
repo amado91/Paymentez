@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Examen</string>
+    <string name="facebook_app_id">168846000494790</string>
+    <string name="fb_login_protocol_scheme">fb168846000494790</string>
+    <string name="pause">pause</string>
+    <string name="resume">resume</string>
+</resources>
